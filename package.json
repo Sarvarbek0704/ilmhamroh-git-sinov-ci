@@ -1,0 +1,18 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aziz Karimovning shaxsiy sayti",
+  "scripts": {
+    "format": "prettier --write sayt",
+    "lint": "html-validate \"sayt/**/*.html\"",
+    "lint:css": "stylelint \"sayt/**/*.css\"",
+    "check": "prettier --check sayt && npm run lint && npm run lint:css"
+  },
+  "devDependencies": {
+    "html-validate": "^11.4.0",
+    "prettier": "^3.9.9",
+    "stylelint": "^17.15.0",
+    "stylelint-config-standard": "^40.0.0"
+  }
+}

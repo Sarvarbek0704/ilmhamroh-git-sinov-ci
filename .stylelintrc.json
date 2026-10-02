@@ -1,0 +1,19 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "rules": {
+    "declaration-no-important": true,
+    "no-descending-specificity": null,
+    "property-disallowed-list": [
+      "/^(margin|padding|border)-(top|right|bottom|left)/",
+      "/^(top|right|bottom|left)$/"
+    ],
+    "declaration-property-value-disallowed-list": {
+      "text-align": ["left", "right"],
+      "float": ["left", "right"]
+    },
+    "custom-property-pattern": [
+      "^_?([a-z][a-z0-9]*)(--?[a-z0-9]+)*$",
+      { "message": "Nom: kichik harf, raqam, chiziqcha" }
+    ]
+  }
+}

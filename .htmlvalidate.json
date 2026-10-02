@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "html-validate:recommended",
+    "html-validate:document",
+    "html-validate:a11y",
+    "html-validate:prettier"
+  ],
+  "rules": {
+    "id-pattern": ["error", { "pattern": "kebabcase" }],
+    "class-pattern": ["error", { "pattern": "kebabcase" }],
+    "require-sri": ["error", { "target": "crossorigin" }]
+  }
+}
